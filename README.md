@@ -1,46 +1,62 @@
+# dotfiles
+
 ## Overview
 These are my personal dotfiles.
 
 You are welcome to take a look,
 and make any suggestion for improvements !
 
-## Dependencies
+## Quickstart
 
-- [GNU Stow](https://www.gnu.org/software/stow/)
+```
+# Install chezmoi
+sh -c "$(curl -fsLS git.io/chezmoi)"
+sudo mv ~/bin/chezmoi /usr/bin
+rm -rf ~/bin
+
+# Apply the dotfiles
+chezmoi init --apply --verbose https://github.com/itaygarin/dotfiles.git
+```
+
+## Todo
+
+- Add `~/.gitconfig` (aliases, email+name, delta, ...)
+- Add `fisher` + its plugins
+- Ditch Regolith for vanilla `i3`/`sway`
+- Try out `polybar`
+- Setup `autorander`
+- Setup `which-key` for space-driven shortcuts 
+  - `Alt+Space` == spacemac's root `space`
+  - `Alt+Space+p` == open recent projects in vscode / alacritty
+  - `Alt+Space+s` == open sound settings
+  - `Alt+space+w` == open networking / wi-fi settings
+  - ...
+- Setup VSCode extensions sync
 
 ### Shell
-- [Zsh](http://www.zsh.org/)
-- fish (oh-my-fish: fzf, fasd and robbyrussell-theme)
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [fasd](https://github.com/clvv/fasd)
-- [Terminator](https://wiki.archlinux.org/index.php/Terminator)
-- Alacritty (rust) + alacritty-theme (Their is vi mode is awesome!!)
-- [fzf](https://github.com/junegunn/fzf)
-- exa (rust)
-- bat (rust)
-- delta (rust)
-- Nix
+- Alacritty (+ alacritty-theme)
+- bat
+- delta
+- fasd
+- fish (+ fisher)
+- fzf
+- ripgrep
 
 ### Emacs
 - [Emacs](https://www.gnu.org/software/emacs/) 24.5
 - [spacemacs](https://github.com/syl20bnr/spacemacs)
 - [emacs-launcher](https://github.com/ItayGarin/emacs-launcher)
 
+## Archive
+
+Using regolith-linux recently. Would like to switch back to vanilla i3
+
 ### i3 Window Manager
 - [i3](https://i3wm.org/)
 - [i3blocks](https://github.com/vivien/i3blocks)
 - [jumpapp](https://github.com/mkropat/jumpapp)
-- [compton](https://github.com/chjj/compton)
-- [scrot](https://github.com/dreamer/scrot)
-- [Albert](https://albertlauncher.github.io/docs/installing/)
-
-## Install
-
-```shell
-sudo apt-get install stow
-git clone https://github.com/ItayGarin/dotfiles ~/dotfiles
-./dotfiles/setup.sh
-```
+- [picom](#)
+- [flameshot](#)
 
 ## home-manager
 
