@@ -131,12 +131,14 @@
       "type": "command"
     }
   ],
-  "window.zoomLevel": 1,
   "editor.tabSize": 8,
   "editor.cursorStyle": "line",
   "editor.insertSpaces": false,
   "editor.lineNumbers": "on",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
