@@ -1,0 +1,14 @@
+[alias]
+	b = "branch"
+	ci = "commit"
+	co = "checkout"
+	d = "diff"
+	di = "diff"
+	dt = "difftool"
+	l = "log"
+	s = "status"
+	st = "status"
+
+[user]
+	email = "thifixp@gmail.com"
+	name = "Itay Garin"
