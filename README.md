@@ -31,7 +31,7 @@ chezmoi init --apply --verbose https://github.com/itaygarin/dotfiles.git
 - Alacritty (+ alacritty-theme)
 - bat
 - delta
-- fasd
+- jethrokuan/z (native fish fasd alternative)
 - fish (+ fisher)
 - fzf
 - ripgrep
